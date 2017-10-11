@@ -23,10 +23,10 @@ public class Main {
         // Creacion de variables
         int dia;
 
+         // Do while hace que el bucle se repita una sola vez sin ningun
+        do {
         System.out.print ("Introdusca un valor : ");
         dia = Integer.parseInt (br.readLine ());
-
-        if (dia >= 1 && dia <= 7) {
 
             // Casos multiples
             switch (dia) {
@@ -59,8 +59,11 @@ public class Main {
             }
 
 
-        }  else{
-            System.out.println ("El valor introducido no es correcto");
-        }
+        } while ( !(dia >= 1 && dia <= 7)  );
+        /*
+            La codicion del while hace que el usuario pueda utilizar un valor comprendido en el bucle
+            y si no es así que vuelva a introducir el valor de nuevo.
+         */
+
     }
 }
