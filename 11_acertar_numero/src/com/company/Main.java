@@ -24,7 +24,8 @@ public class Main {
         // Para generar numeros aleatorios
         Random r = new Random ();
         int aleatorio =r.nextInt (100);
-        String respuesta = rb.readLine ();
+        System.out.println ("dame la respuesta : ");
+        String respuesta = "";
         // crear variables
         int numero, contador = 0;
 
@@ -38,6 +39,8 @@ public class Main {
                 System.out.println (" Eres el amo pana Acertaste a la primera");
             } else if (numero > aleatorio) {
                 System.out.println (" El numero que has introducido es mayor, podrias buscar uno menor");
+            } else if(numero < aleatorio){
+                System.out.println ("numero es menor ");
             }
 
             contador++;
