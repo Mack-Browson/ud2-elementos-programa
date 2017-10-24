@@ -11,19 +11,17 @@ public class Main {
 
         BufferedReader br = new BufferedReader (new InputStreamReader (System.in));
 
-        int valor,rep,total=0;
-
-
+        int valor,cuadrado=0;
 
         System.out.print (" Dame un valor : ");
         valor = Integer.parseInt (br.readLine ());
 
-        for (rep=0; rep<valor;rep= rep++){
-
-            total = total+valor;
-            System.out.println (" El cuadrador de "+valor+ " es : "+total);
-        }
+                   for(int i=0;i<valor;i++){
+                       cuadrado=cuadrado+valor;
+                   }
+        System.out.println ("El cuadrado de : "+valor+" es "+cuadrado);
 
 
     }
 }
+
